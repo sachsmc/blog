@@ -6,7 +6,7 @@ tagline: Getting Set up
 {% include JB/setup %}
 
 ## First post coming soon
-### Title: Creating Interactive Brownian Bridges using d3.js
+Title: Creating Interactive Brownian Bridges using d3.js
 
 ## Sample Posts
 
