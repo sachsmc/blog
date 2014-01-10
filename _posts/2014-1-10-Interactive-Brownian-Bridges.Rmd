@@ -7,7 +7,8 @@ tags : [intro, tutorial, how-to, d3.js, brownian-motion]
 {% include JB/setup %}
 ```{r include = FALSE, cache = FALSE}
 chunk.label <- "2014-1-10-interactive-brownian"
-opts_knit$set(base.url = "http://sachsmc.github.io/blog", unnamed.chunk.label = chunk.label)
+opts_knit$set(base.url = "https://raw.github.com/sachsmc/blog/gh-pages", 
+              unnamed.chunk.label = chunk.label)
 fig.path <- "/assets/figures/"
 opts_chunk$set(fig.path = fig.path)
 opts_chunk$set(fig.cap = "center")
