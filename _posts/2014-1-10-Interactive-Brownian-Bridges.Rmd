@@ -3,6 +3,7 @@ layout: post
 category : tutorial
 tagline: "Supporting tagline"
 tags : [intro, tutorial, how-to, d3.js, brownian-motion]
+excerpt : For my first post, I'd like to write a brief tutorial on how I made the cool interactive "Brownian Viaducts" as seen on my <a href="http://sachsmc.github.io">homepage</a>. There were a number of steps invovled in getting from the idea to the implementation that I plan to work through. But first, what is a Brownian Viaduct?
 ---
 {% include JB/setup %}
 ```{r include = FALSE, cache = FALSE}
