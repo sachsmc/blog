@@ -28,7 +28,7 @@ mean(runif(100) < 0.25)
 
 
 {% highlight text %}
-## [1] 0.27
+## [1] 0.24
 {% endhighlight %}
 
 
@@ -43,6 +43,6 @@ empcdf.unif <- function(t) {
 curve(empcdf.unif, from = 0, to = 1)
 {% endhighlight %}
 
-![center](https://raw.github.com/sachsmc/blog/gh-pages/assets/figures/2014-1-10-interactive-brownian-3.png) 
+![center](https://raw.github.com/sachsmc/blog/gh-pages/_posts/assets/figures/2014-1-10-interactive-brownian-3.png) 
 
 
