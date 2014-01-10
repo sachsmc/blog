@@ -5,8 +5,14 @@ tagline: "Supporting tagline"
 tags : [intro, tutorial, how-to, d3.js, brownian-motion]
 ---
 {% include JB/setup %}
-
-
+```{r include = FALSE, cache = FALSE}
+chunk.label <- "2014-1-10-interactive-brownian"
+opts_knit$set(base.url = "http://sachsmc.github.io/blog", unnamed.chunk.label = chunk.label)
+fig.path <- "/assets/figures/"
+opts_chunk$set(fig.path = fig.path)
+opts_chunk$set(fig.cap = "center")
+render_jekyll()
+```
 
 Creating Interactive Brownian Bridges using d3.js
 ========================================================
@@ -20,29 +26,17 @@ A [Brownian bridge](https://en.wikipedia.org/wiki/Brownian_bridge) is a Gaussian
 To solidify things, lets consider a sample from the Uniform distribution on (0, 1). The empirical cdf at _t_ is simply the proportion of samples that are less than _t_. 
 
 
-
-{% highlight r %}
-mean(runif(100) < 0.25)
-{% endhighlight %}
-
-
-
-{% highlight text %}
-## [1] 0.32
-{% endhighlight %}
-
+```{r}
+mean(runif(100) < .25)
+```
 
 
 Here I took _t_ = 0.25, but the empirical process is just the random function of _t_. Let's plot it:
 
-
-{% highlight r %}
-empcdf.unif <- function(t) {
-    sapply(t, function(x) mean(runif(100) < x))
-}
+```{r fig.width = 5, fig.height = 5}
+empcdf.unif <- function(t){ 
+  sapply(t, function(x) mean(runif(100) < x)) 
+  }
 curve(empcdf.unif, from = 0, to = 1)
-{% endhighlight %}
-
-![center](http://sachsmc.github.io/blog/assets/figures/2014-1-10-interactive-brownian--3.png) 
-
+```
 
