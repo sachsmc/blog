@@ -5,8 +5,16 @@ tagline: Getting Set up
 ---
 {% include JB/setup %}
 
-## First post coming soon
-Title: Creating Interactive Brownian Bridges using d3.js
+## Recent Posts
+
+<ul>
+  {% for post in site.posts limit 2 %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+      <p>{{ post.excerpt }}</p>
+    </li>
+  {% endfor %}
+</ul>
 
 ## Sample Posts
 
