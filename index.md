@@ -10,7 +10,7 @@ tagline: Getting Set up
 <ul>
   {% for post in site.posts limit 2 %}
     <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
+      <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a>
       <p>{{ post.excerpt }}</p>
     </li>
   {% endfor %}
